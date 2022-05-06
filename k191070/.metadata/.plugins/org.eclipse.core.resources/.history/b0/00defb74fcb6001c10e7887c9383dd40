@@ -1,0 +1,13 @@
+package q2;
+
+public class CustomExecp extends Exception{
+
+	public CustomExecp(Exception e) {
+		
+	}
+	String toString(String s) {
+		return "Exception Caught: " + s;
+	}
+	
+	
+}

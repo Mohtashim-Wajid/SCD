@@ -1,0 +1,32 @@
+package q2;
+
+public class Control {
+	int headCount = 0;
+	int inside = 0;
+	int waiting = 0;
+	public int show() {
+		return inside;
+	}
+	public int add() {
+		if(headCount >= 0 && headCount <=10) {
+			headCount ++;
+			return 1;
+		}else {
+			return 0;
+		}
+		
+	}
+	public int remove() {
+		if(headCount >= 0 && headCount <=10) {
+			headCount --;
+			return 1;
+		}
+		else {
+			return 0;
+		}
+		
+	}
+	public void resetCount() {
+		headCount = 0;
+	}
+}
